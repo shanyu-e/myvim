@@ -1,0 +1,556 @@
+# 这个 viminfo 文件是由 Vim 7.3 所产生。
+# 如果想要自行修改请特别小心！
+
+# 文件被写的时候 ‘encoding’ 的值
+*encoding=utf-8
+
+
+# hlsearch on (H) or off (h):
+~h
+# 上个 Search 图案：
+~MSle0~/backspace
+
+# 最后替换的字符串
+$
+
+# 命令行 历史记录 (从新到旧)：
+:q
+:wq
+:q!
+:wq!
+:e rename.py
+:set nu
+:!wq
+:tabnew 9.16
+:e 9.16
+:tabnew
+:newtab
+:!qw
+:!q
+:1
+:WQ!
+:w!
+:W
+:w
+:!w
+:qw
+:reg
+:"+7yw
+:y
+:/backspace
+:help version7
+:set nonu
+:q1
+:+p
+
+# 查找字符串 历史记录 (从新到旧)：
+? backspace
+?/ff
+??up
+?/amc
+?/goy
+?/win
+
+# 表达式 历史记录 (从新到旧)：
+
+# 输入行 历史记录 (从新到旧)：
+
+# 输入行 历史记录 (从新到旧)：
+
+# 寄存器:
+"0	CHAR	0
+	#
+""1	LINE	0
+	" An example for a vimrc file.
+	"
+	" Maintainer:	Bram Moolenaar <Bram@vim.org>
+	" Last change:	2011 Apr 15
+	"
+	" To use it, copy it to
+	"     for Unix and OS/2:  ~/.vimrc
+	"	      for Amiga:  s:.vimrc
+	"  for MS-DOS and Win32:  $VIM\_vimrc
+	"	    for OpenVMS:  sys$login:.vimrc
+	
+	" When started as "evim", evim.vim will already have done these settings.
+	if v:progname =~? "evim"
+	  finish
+	endif
+	
+	" Use Vim settings, rather than Vi settings (much better!).
+	" This must be first, because it changes other options as a side effect.
+	set nocompatible
+	
+	" allow backspacing over everything in insert mode
+	set backspace=indent,eol,start
+	
+	if has("vms")
+	  set nobackup		" do not keep a backup file, use versions instead
+	else
+	  set backup		" keep a backup file
+	endif
+	set history=50		" keep 50 lines of command line history
+	set ruler		" show the cursor position all the time
+	set showcmd		" display incomplete commands
+	set incsearch		" do incremental searching
+	
+	" For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries
+	" let &guioptions = substitute(&guioptions, "t", "", "g")
+	
+	" Don't use Ex mode, use Q for formatting
+	map Q gq
+	
+	" CTRL-U in insert mode deletes a lot.  Use CTRL-G u to first break undo, so
+	" that you can undo CTRL-U after inserting a line break.
+	inoremap <C-U> <C-G>u<C-U>
+	
+	" In many terminal emulators the mouse works just fine, thus enable it.
+	if has('mouse')
+	  set mouse=a
+	endif
+	
+	" Switch syntax highlighting on, when the terminal has colors
+	" Also switch on highlighting the last used search pattern.
+"2	LINE	0
+	set number
+"3	LINE	0
+	set number
+"4	LINE	0
+		#print len(ext)
+"5	LINE	0
+			#print ext
+"6	LINE	0
+			ext = "00"+ext
+"7	LINE	0
+		elif len(ext) <=4:
+"8	LINE	0
+			ext = "0"+ext
+"9	LINE	0
+		if len(ext) <=5:
+"-	CHAR	0
+	/home/dengjing/桌面/shotpic/
+
+# 文件标记:
+'0  10  0  ~/.vimrc备份
+'1  1  0  ~/.vimrc
+'2  1  5  ~/.vimrc
+'3  1  0  ~/桌面/shotpic/011讲
+'4  1  0  ~/桌面/命令记录
+'5  13  22  ~/桌面/vi命令
+'6  21  22  /etc/vim/gvimrc
+'7  111  0  ~/桌面/vi命令
+'8  20  9  /etc/vim/gvimrc
+'9  54  0  /etc/vim/vimrc
+
+# 跳转列表 (从新到旧):
+-'  10  0  ~/.vimrc备份
+-'  1  0  ~/.vimrc备份
+-'  1  0  ~/.vimrc
+-'  1  0  ~/桌面/shotpic/011讲
+-'  1  0  ~/桌面/命令记录
+-'  13  22  ~/桌面/vi命令
+-'  111  0  ~/桌面/vi命令
+-'  21  22  /etc/vim/gvimrc
+-'  20  9  /etc/vim/gvimrc
+-'  22  0  ~/桌面/vi命令
+-'  1  0  /etc/vim/gvimrc
+-'  54  0  /etc/vim/vimrc
+-'  55  0  /etc/vim/vimrc
+-'  116  0  ~/桌面/vi命令
+-'  53  27  /etc/vim/vimrc
+-'  1  0  ~/桌面/vi命令
+-'  1  0  ~/桌面/python视频/rename2.py
+-'  9  17  ~/桌面/python视频/rename.py
+-'  12  40  ~/桌面/rename2.py
+-'  11  1  ~/桌面/rename2.py
+-'  1  0  ~/桌面/rename2.py
+-'  9  17  ~/桌面/rename.py
+-'  15  15  ~/桌面/rename.py
+-'  1  0  ~/rename.py
+-'  6  34  ~/桌面/rename.py
+-'  10  1  ~/桌面/rename.py
+-'  17  14  ~/桌面/rename.py
+-'  12  15  ~/桌面/rename.py
+-'  16  0  ~/桌面/rename.py
+-'  18  14  ~/桌面/rename.py
+-'  11  23  ~/桌面/rename.py
+-'  1  0  ~/桌面/rename.py
+-'  62  0  /boot/grub/grub.cfg
+-'  50  0  /etc/mysql/my.cnf
+-'  53  0  /etc/mysql/my.cnf
+-'  120  1  /etc/mysql/my.cnf
+-'  35  12  /etc/mysql/my.cnf
+-'  41  34  /etc/mysql/my.cnf
+-'  23  0  /usr/local/mysql/support-files/my-default.cnf
+-'  1  0  /usr/local/mysql/support-files/my-default.cnf
+-'  1  0  /etc/mysql/my.cnf
+-'  22  36  /etc/my.cnf
+-'  20  13  /etc/my.cnf
+-'  1  0  /etc/my.cnf
+-'  474  0  /usr/local/tomcat/RUNNING.txt
+-'  1  0  /usr/local/tomcat/RUNNING.txt
+-'  18  34  ~/cwork/9.16.cpp
+-'  1  0  ~/cwork/9.16.cpp
+-'  1  0  ~/cwork/9.16
+-'  41  0  /etc/init.d/rc.local
+-'  42  53  /etc/init.d/rc.local
+-'  39  13  /etc/init.d/rc.local
+-'  1  0  /etc/init.d/rc.local
+-'  13  0  /etc/rc.local
+-'  14  0  /etc/rc.local
+-'  1  0  /etc/rc
+-'  1  0  /etc/rc1.d
+-'  1  9  /etc/rc0.d
+-'  1  0  /etc/rc.local
+-'  7  20  ~/appid026a1751fk/1/index.py
+-'  3  0  ~/appid026a1751fk/.git/COMMIT_EDITMSG
+-'  1  0  ~/appid026a1751fk/.git/COMMIT_EDITMSG
+-'  1  0  ~/appid026a1751fk/1/index.py
+-'  9  0  ~/appidrfqfuuea40/.git/COMMIT_EDITMSG
+-'  1  0  ~/appidrfqfuuea40/.git/COMMIT_EDITMSG
+-'  7  19  ~/appidrfqfuuea40/0/index.py
+-'  1  0  ~/appidrfqfuuea40/0/index.py
+-'  7  19  ~/桌面/appidrfqfuuea40/0/index.py
+-'  9  0  ~/桌面/appidrfqfuuea40/.git/COMMIT_EDITMSG
+-'  10  0  ~/桌面/appidrfqfuuea40/.git/COMMIT_EDITMSG
+-'  1  0  ~/桌面/appidrfqfuuea40/.git/COMMIT_EDITMSG
+-'  64  0  /boot/grub/grub.cfg
+-'  1  0  ~/桌面/appidrfqfuuea40/0/index.py
+-'  61  14  /boot/grub/grub.cfg
+-'  1  0  /boot/grub/grub.cfg
+-'  171  30  /usr/local/google_appengine/google_sql.py
+-'  1  0  /usr/local/google_appengine/google_sql.py
+-'  124  68  /usr/local/google_appengine/goagent-3.0/local/goagent-gtk.py
+-'  1  0  /usr/local/google_appengine/goagent-3.0/local/goagent-gtk.py
+-'  88  9  /usr/local/google_appengine/goagent-3.0/local/proxy.ini
+-'  8  78  /usr/local/google_appengine/goagent-3.0/local/proxy.ini
+-'  1  155  /etc/environment
+-'  2  0  /usr/local/google_appengine/goagent-3.0/local/fanqiang
+-'  1  0  /etc/enviroment
+-'  65  0  /etc/bash.bashrc
+-'  1  0  /usr/local/google_appengine/goagent-3.0/local/fanqiang
+-'  1  0  /etc/bash.bashrc
+-'  1  12  /etc/profile
+-'  8  12  /etc/profile
+-'  21  25  ~/.profile
+-'  1  0  ~/.profile
+-'  1  0  ~/.bash_login
+-'  1  0  ~/.bash_profile
+-'  107  0  ~/.bashrc
+-'  31  34  /etc/profile
+-'  1  0  /etc/bashrc
+-'  93  0  ~/.bashrc
+-'  1  0  ~/.bashrc
+-'  1  0  ~/.vimrc
+
+# 文件内的标记历史记录 (从新到旧):
+
+> ~/.vimrc备份
+	"	10	0
+
+> ~/.vimrc
+	"	1	0
+	.	1	0
+	+	1	5
+	+	1	51
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	1
+	+	1	0
+	+	1	0
+	+	1	88
+	+	1	25
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	29
+	+	1	76
+	+	1	76
+	+	1	0
+	+	1	0
+
+> ~/桌面/shotpic/011讲
+	"	1	0
+
+> ~/桌面/命令记录
+	"	1	0
+
+> ~/桌面/vi命令
+	"	13	22
+	^	116	0
+	.	115	0
+	+	113	0
+	+	113	0
+	+	114	0
+	+	115	0
+
+> /usr/share/vim/vim73/doc/help.txt
+	"	115	7
+
+> /etc/vim/gvimrc
+	"	21	22
+	^	21	0
+	.	21	0
+	+	20	0
+	+	21	0
+
+> /etc/vim/vimrc
+	"	54	0
+	.	55	0
+	+	55	0
+	+	55	0
+
+> ~/桌面/python视频/rename2.py
+	"	1	0
+
+> ~/桌面/python视频/rename.py
+	"	9	17
+
+> ~/桌面/rename2.py
+	"	12	40
+	^	12	41
+	.	12	38
+	+	12	0
+	+	10	0
+	+	12	38
+
+> ~/桌面/rename.py
+	"	9	17
+	^	15	16
+	.	15	15
+	+	1	0
+	+	6	0
+	+	6	0
+	+	7	0
+	+	7	0
+	+	7	0
+	+	8	0
+	+	9	0
+	+	18	0
+	+	11	20
+	+	18	0
+	+	18	37
+	+	8	23
+	+	6	19
+	+	10	37
+	+	6	36
+	+	19	0
+	+	18	0
+	+	19	0
+	+	6	0
+	+	6	0
+	+	7	0
+	+	9	0
+	+	6	3
+	+	2	0
+	+	6	0
+	+	11	32
+	+	17	1
+	+	11	0
+	+	10	0
+	+	17	0
+	+	10	1
+	+	11	7
+	+	17	10
+	+	11	23
+	+	18	0
+	+	17	0
+	+	16	2
+	+	12	11
+	+	16	0
+	+	12	15
+	+	17	1
+	+	16	2
+	+	13	14
+	+	18	33
+	+	6	73
+	+	14	19
+	+	15	15
+
+> ~/rename.py
+	"	1	0
+
+> /boot/grub/grub.cfg
+	"	62	0
+	^	61	15
+	.	61	14
+	+	62	14
+	+	344	42
+	+	344	0
+	+	344	0
+	+	344	0
+	+	344	0
+	+	62	0
+	+	61	14
+
+> /etc/mysql/my.cnf
+	"	50	0
+	^	50	1
+	.	50	0
+	+	39	0
+	+	40	0
+	+	45	0
+	+	41	0
+	+	42	0
+	+	43	0
+	+	50	0
+	+	50	0
+
+> /usr/local/mysql/support-files/my-default.cnf
+	"	23	0
+
+> /etc/my.cnf
+	"	22	36
+	.	22	10
+	+	22	10
+
+> /usr/local/tomcat/RUNNING.txt
+	"	474	0
+
+> ~/cwork/9.16.cpp
+	"	18	34
+
+> ~/cwork/9.16
+	"	1	0
+
+> /etc/init.d/rc.local
+	"	41	0
+	.	42	0
+	+	43	0
+	+	42	53
+	+	41	4
+	+	42	0
+
+> /etc/rc.local
+	"	13	0
+	^	13	8
+	.	13	0
+	+	13	0
+
+> /etc/rc
+	"	1	0
+
+> ~/appid026a1751fk/1/index.py
+	"	7	20
+	^	7	21
+	.	7	20
+	+	7	20
+
+> ~/appid026a1751fk/.git/COMMIT_EDITMSG
+	"	3	0
+
+> ~/appidrfqfuuea40/.git/COMMIT_EDITMSG
+	"	9	0
+	.	9	0
+	+	8	0
+	+	9	0
+
+> ~/appidrfqfuuea40/0/index.py
+	"	7	19
+	^	7	20
+	.	7	19
+	+	7	19
+
+> ~/桌面/appidrfqfuuea40/0/index.py
+	"	7	19
+	^	7	20
+	.	7	19
+	+	7	19
+
+> ~/桌面/appidrfqfuuea40/.git/COMMIT_EDITMSG
+	"	9	0
+	.	9	0
+	+	8	0
+	+	9	0
+
+> /usr/local/google_appengine/google_sql.py
+	"	171	30
+
+> /usr/local/google_appengine/goagent-3.0/local/goagent-gtk.py
+	"	124	68
+	^	124	69
+	.	124	69
+	+	124	69
+
+> /usr/local/google_appengine/goagent-3.0/local/proxy.ini
+	"	88	9
+	^	8	7
+	.	8	126
+	+	4	9
+	+	8	8
+	+	8	126
+
+> /etc/environment
+	"	1	155
+	^	1	110
+	.	1	110
+	+	1	110
+
+> /usr/local/google_appengine/goagent-3.0/local/fanqiang
+	"	2	0
+	^	2	2
+	.	2	0
+	+	1	0
+	+	2	0
+
+> /etc/enviroment
+	"	1	0
+
+> /etc/bash.bashrc
+	"	65	0
+	^	65	1
+	.	65	0
+	+	65	0
+
+> /etc/profile
+	"	1	12
+
+> ~/.profile
+	"	21	25
+
+> ~/.bash_login
+	"	1	0
+
+> ~/.bash_profile
+	"	1	0
+
+> ~/.bashrc
+	"	107	0
+
+> /etc/bashrc
+	"	1	0
+
+> /usr/local/google_appengine/goagent-goagent-6185778/local/fangqiang
+	"	1	0
+
+> /usr/local/google_appengine/goagent-goagent-6185778/server/python/app.yaml
+	"	1	0
+
+> /usr/local/google_appengine/goagent-3.0/server/python/app.yaml
+	"	1	0
+	^	1	13
+	.	1	12
+	+	1	12
+
+> /usr/local/google_appengine/goagent-goagent-6185778/local/proxy.ini
+	"	10	3
+
+> /usr/local/bin/shangwang
+	"	3	0
+
+> /usr/local/bin/upnet
+	"	71	0
+
+> ~/.vimrc.vim
+	"	1	0
+
+> /usr/share/vim/vim73/doc/version7.txt
+	"	52	8
+
+> /usr/share/vim/vim73/gvimrc_example.vim
+	"	25	0
