@@ -1,0 +1,3 @@
+[submodule "vundle"]
+	path = vundle
+	url = /home/dengjing/.vim/bundle/vundle
