@@ -72,7 +72,9 @@ imap <C-v> <Esc>"+pa
 filetype off      "没弄清
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
-Bundle 'gmarik/vundle'
+"github的格式
+Bundle 'gmarik/vundle' 
+Bundle 'The-NERD-tree'
 filetype plugin indent on
 "-----------------------------------------------------
 "end
